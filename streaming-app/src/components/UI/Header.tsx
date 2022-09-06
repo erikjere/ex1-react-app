@@ -1,11 +1,11 @@
 import { Fragment } from 'react'
 import classes from './Header.module.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 const Header = () => {
   const [name, setName] = useState('Titles')
-
+  const navigate = useNavigate()
   const location = useLocation()
 
   if (location.pathname === '/' && name !== 'Titles') {
@@ -18,7 +18,14 @@ const Header = () => {
   return (
     <Fragment>
       <div className={classes.container}>
-        <h1 className={classes.title}>DEMO Streaming</h1>
+        <h1
+          className={classes.title}
+          onClick={(event: React.MouseEvent<HTMLElement>) =>
+            navigate('./', { replace: false })
+          }
+        >
+          DEMO Streaming
+        </h1>
         <div className={classes['sub-container']}>
           <p className={classes['log-in']}>Log in</p>
           <button className={classes.button}>Start your free trial</button>

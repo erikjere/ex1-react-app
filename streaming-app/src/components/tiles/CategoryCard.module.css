@@ -1,0 +1,33 @@
+.container {
+  width: 254px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+
+.img-background {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 254px;
+  height: 381px;
+  background-color: black;
+}

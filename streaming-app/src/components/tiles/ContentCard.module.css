@@ -1,0 +1,12 @@
+.card {
+  width: 240px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poster {
+  width: 254px;
+  height: 381px;
+}

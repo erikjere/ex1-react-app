@@ -1,28 +1,20 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App'
-import Movies from './Movies'
-import Series from './Series'
 import Footer from './components/UI/Footer'
-import reportWebVitals from './reportWebVitals'
 import Header from './components/UI/Header'
+import Content from './Content'
 
 ReactDOM.render(
   <BrowserRouter>
     <Header />
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/movies" element={<Movies />} />
-      <Route path="/series" element={<Series />} />
+      <Route path="/movies" element={<Content contentType={'movie'} />} />
+      <Route path="/series" element={<Content contentType={'series'} />} />
     </Routes>
     <Footer />
   </BrowserRouter>,
   document.getElementById('root')
 )
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
