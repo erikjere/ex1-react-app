@@ -3,9 +3,11 @@
   bottom: 0;
   background-color: #2f2f2f;
 }
+
 .padding {
-  padding: 40px 80px;
+  padding: 20px 40px;
 }
+
 .buttons-container {
   display: flex;
   flex-direction: row;
@@ -13,16 +15,10 @@
   padding-top: 30px;
 }
 
-.stores-container {
+.buttons-sub-container {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-}
-
-.social-container {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
+  gap: 5px;
 }
 
 .links {
@@ -34,11 +30,31 @@
 }
 
 .store {
-  width: 135px;
-  height: 40px;
+  width: 68px;
+  height: 20px;
 }
 
 .social {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 665px) {
+  .social {
+    width: 40px;
+    height: 40px;
+  }
+
+  .store {
+    width: 135px;
+    height: 40px;
+  }
+
+  .buttons-sub-container {
+    gap: 15px;
+  }
+
+  .padding {
+    padding: 40px 80px;
+  }
 }

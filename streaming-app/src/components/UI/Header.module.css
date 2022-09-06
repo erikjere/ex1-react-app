@@ -10,26 +10,28 @@
 
 .title {
   color: white;
-  margin-left: 60px;
+  margin-left: 40px;
+  font-size: 1.3em;
 }
 
 .sub-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
-  margin-right: 60px;
+  gap: 10px;
+  margin-right: 40px;
 }
 
 .log-in {
   color: white;
+  font-size: 0.8em;
 }
 
 .button {
   color: white;
   background-color: #0f0f0f;
   border: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 .sub-header {
@@ -40,5 +42,31 @@
 
 .text {
   color: white;
-  margin: 0 0 0 60px;
+  margin: 0 0 0 40px;
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 665px) {
+  .text {
+    margin: 0 0 0 60px;
+    font-size: 1.5em;
+  }
+
+  .title {
+    margin-left: 60px;
+    font-size: 2em;
+  }
+
+  .sub-container {
+    margin-right: 60px;
+    gap: 20px;
+  }
+
+  .log-in {
+    font-size: 1em;
+  }
+
+  .button {
+    padding: 10px;
+  }
 }

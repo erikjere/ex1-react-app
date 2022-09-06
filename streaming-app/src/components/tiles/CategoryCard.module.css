@@ -1,6 +1,6 @@
 .container {
-  width: 254px;
-  height: 450px;
+  width: 172px;
+  height: 320px;
   display: flex;
   flex-direction: column;
 }
@@ -11,12 +11,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .image {
   display: block;
   position: absolute;
+  width: 172px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -27,7 +28,27 @@
   position: relative;
   text-align: center;
   color: white;
-  width: 254px;
-  height: 381px;
+  width: 172px;
+  height: 258px;
   background-color: black;
+}
+
+@media only screen and (min-width: 665px) {
+  .container {
+    width: 254px;
+    height: 450px;
+  }
+
+  .img-background {
+    width: 254px;
+    height: 381px;
+  }
+
+  .image {
+    width: 254px;
+  }
+
+  .center {
+    font-size: 2em;
+  }
 }

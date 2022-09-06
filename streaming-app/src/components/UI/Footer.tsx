@@ -14,7 +14,7 @@ const Footer = () => {
           Copyright <>&copy;</> 2016 DEMO Streaming. All Rights Reserved.
         </p>
         <div className={classes['buttons-container']}>
-          <div className={classes['social-container']}>
+          <div className={classes['buttons-sub-container']}>
             <img
               className={classes.social}
               src="./assets/social/facebook-white.svg"
@@ -31,7 +31,7 @@ const Footer = () => {
               alt="instagram"
             />
           </div>
-          <div className={classes['stores-container']}>
+          <div className={classes['buttons-sub-container']}>
             <img
               className={classes.store}
               src="./assets/store/app-store.svg"
