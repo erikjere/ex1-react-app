@@ -1,0 +1,42 @@
+.container {
+  height: 15%;
+  width: 100%;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.title {
+  color: white;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.log-in {
+  color: white;
+}
+
+.button {
+  color: white;
+  background-color: #0f0f0f;
+  border: none;
+  padding: 10px;
+}
+
+.sub-header {
+  background-color: #1f1f1f;
+  height: 15%;
+  width: 100%;
+}
+
+.text {
+  color: white;
+  margin: 0;
+}
